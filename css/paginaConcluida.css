@@ -54,7 +54,7 @@ span::after {
     zoom: 150%;
     bottom: 15px;
     right: 20px;
-    transform: rotate(35deg);
+    transform: rotate(45deg);
     animation-name: surgeCheck;
     animation-duration: 1.5s;
 }
