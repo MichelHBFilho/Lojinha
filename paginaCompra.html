@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efetuar Pagamento</title>
+    <link rel="stylesheet" href="css/paginaCompra.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Lojinha</a></h1>
+        <p>Compre o que quiser quando quiser!</p>
+    </header>
+    <main>
+        <form autocomplete="off">
+
+            <div id="produto">
+                
+            </div>
+
+            <div class="form-main" id="primeiro">
+                <div class="espaco"></div>
+                <label for="nome">Insira seu nome completo:</label>
+                <input type="text" id="nome" required data-tipo="nome">
+                <div class="espaco"></div>
+                <label for="dataNascimento" >Insira sua data de nascimento:</label>
+                <input type="date" data-tipo="nascimento" required id="dataNascimento">
+                <div class="espaco"></div>
+                <label for="telefone">Insira seu Numero de telefone:</label>
+                <input type="tel" data-tipo="telefone" id="telefone">
+                <div class="espaco"></div>
+                <label for="cpf">Insira seu CPF:</label>
+                <input type="text" maxlength="14" id="cpf" data-tipo="cpf" required pattern="^[\d]{3}.[\d]{3}.[\d]{3}-[\d]{2}$">
+                
+            </div>
+
+            <div class="form-main" id="segundo">
+                <div class="espaco"></div>
+                <label for="cep">Insira seu CEP:</label>
+                <input type="text" id="cep" data-tipo="cep" pattern="[\d]{5}-?[\d]{3}" title="O CEP não está em um formato valido" required>
+                
+                <div class="espaco"></div>
+                <label for="logradouro">Insira seu Logradouro:</label>
+                <input type="text" id="logradouro" data-tipo="logradouro">
+                <div class="espaco"></div>
+                <label for="cidade">Insira sua cidade:</label>
+                <input type="text" id="cidade" data-tipo="cidade">
+                <div class="espaco"></div>
+                <label for="estado">Insira seu estado:</label>
+                <input type="text" id="estado" data-tipo="estado">
+            </div>
+            <button id="enviar">Enviar</button>
+        </form>
+    </main>
+    <script type="module" src="scripts/mainValidacoes.js"></script>
+</body>
+</html>

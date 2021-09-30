@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap');
+
+:root {
+    --cor1: #3A2449;
+    --cor2: #372772;
+    --cor3: #A1E8AF;
+}
+
+* {
+    padding: 0; margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    zoom: 150%;
+}
+
+header {
+    background-color: var(--cor1);
+    color: var(--cor3);
+    height: max-content;
+    box-shadow: 0 3px 5px #3a24496b;
+    text-align: center;
+}
+
+header > p {
+    margin: 10px auto 10px auto;
+    font-weight: 300;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+#divCheck {
+    width: 100px;
+    height: 100px;
+    border: 5px solid var(--cor3);
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+
+span::after {
+    content:"";
+    border-right: 5px solid var(--cor3);
+    border-bottom: 5px solid var(--cor3);
+    border-radius: 0 1px 0 1px;
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    zoom: 150%;
+    bottom: 15px;
+    right: 20px;
+    transform: rotate(35deg);
+    animation-name: surgeCheck;
+    animation-duration: 1.5s;
+}
+
+@keyframes surgeCheck {
+    0% {
+        right: 80px;
+        opacity: 0%;
+        transform: rotate(10deg);
+    }
+    100% {
+        bottom: 15px;
+        right: 20px;
+        transform: rotate(35deg);
+    }
+}
+
+h2, h3 {
+    text-align: center;
+    color: var(--cor3);
+}
+
+h3, a {
+    color: black;
+    margin: auto;
+    width: 150px;
+    text-decoration: none;
+    position: relative;
+}
+
+h3::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    border-bottom: 2px solid black;
+    bottom: 0;
+    left: 0;
+    transition-duration: 0.5s;
+}
+
+h3:hover::after {
+    width: 150px;
+}

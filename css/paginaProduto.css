@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap');
+
+:root {
+    --cor1: #3A2449;
+    --cor2: #372772;
+    --cor3: #A1E8AF;
+}
+
+* {
+    padding: 0; margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    zoom: 150%;
+}
+
+@media screen and (min-width: 500px) {
+    
+    header {
+        height: 90px;
+    }
+    
+    main {
+        margin-top: 10px;
+        border-radius: 20px;
+        max-width: 500px;
+        min-height: 110px;
+        margin: auto;
+        background-color: var(--cor3);
+        position: relative;
+        padding: 5px;
+    }
+    
+    img, h2, main > p {
+        display: inline-block;
+        color: black;
+    }
+    
+    img {
+        max-width: 50%;
+        margin-right: 20px;
+    }
+    
+    h2 {
+        position: absolute;
+        top: 10px;
+    }
+    
+    p {
+        position: absolute;
+        top: 40px;
+    }
+
+    button {
+        position: absolute;
+        top: 80px;
+    }
+    
+    
+}
+
+@media screen and (max-width:500px) {
+    header {
+        height: max-content;
+    }
+    main {
+        width: calc(100% - 10px);
+        background-color: var(--cor3);
+        height: min-content;
+        margin-bottom: 10px;
+        padding: 5px;
+        position: relative;
+    }
+    main > img {
+        width: 100%;
+    }
+    main > button {
+        margin: auto;
+        display: block;
+    }
+    main > h2, main > p {
+        text-align: center;
+    }
+}
+
+header a {
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+header {
+    background-color: var(--cor1);
+    color: var(--cor3);
+    
+    box-shadow: 0 3px 5px #3a24496b;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header > p {
+    width: 100%;
+    margin: 10px auto 10px auto;
+    font-weight: 300;
+}
+
+button {
+    background-color: var(--cor1);
+    color: white;
+    border: transparent;
+    padding: 4px;
+    border-radius: 7px;
+    width: 130px;
+    
+    margin: auto;
+    transition-duration: 0.5s;
+}
+
+button:hover {
+    box-shadow: inset 5px 5px 8px rgba(0, 0, 0, 0.39);
+    cursor: pointer;
+}
+
