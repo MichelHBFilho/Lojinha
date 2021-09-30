@@ -68,7 +68,7 @@ span::after {
     100% {
         bottom: 15px;
         right: 20px;
-        transform: rotate(35deg);
+        transform: rotate(45deg);
     }
 }
 
